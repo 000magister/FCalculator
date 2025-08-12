@@ -11,19 +11,7 @@ namespace FCalculator
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (IsFirst)
-            {
-                FirstNum += "2";
-                richTextBox1.Text = FirstNum;
-            }
-            else
-            {
-                SecondNum += "2";
-                richTextBox1.Text = SecondNum;
-            }
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -35,11 +23,7 @@ namespace FCalculator
 
         }
 
-        private void button15_Click(object sender, EventArgs e) // ›“Œ + 
-        {
-            Operation = '+';
-            IsFirst = false;
-        }
+
 
         private void button12_Click(object sender, EventArgs e) // ›“Œ =
         {
@@ -62,22 +46,31 @@ namespace FCalculator
             richTextBox1.Text = Result.ToString();
         }
 
+        private void button15_Click(object sender, EventArgs e) // ›“Œ + 
+        {
+            Operation = '+';
+            IsFirst = false;
+            richTextBox1.Text += "+";
+        }
         private void button16_Click(object sender, EventArgs e) // ›“Œ -
         {
             Operation = '-';
             IsFirst = false;
+            richTextBox1.Text += "-";
         }
 
         private void button14_Click(object sender, EventArgs e) // ›“Œ *
         {
             Operation = '*';
             IsFirst = false;
+            richTextBox1.Text += "*";
         }
 
         private void button13_Click(object sender, EventArgs e) // ›“Œ /
         {
             Operation = '/';
             IsFirst = false;
+            richTextBox1.Text += "/";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -90,7 +83,21 @@ namespace FCalculator
             else
             {
                 SecondNum += "1";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "1";
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (IsFirst)
+            {
+                FirstNum += "2";
+                richTextBox1.Text = FirstNum;
+            }
+            else
+            {
+                SecondNum += "2";
+                richTextBox1.Text += "2";
             }
         }
 
@@ -104,7 +111,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "3";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "3";
             }
         }
 
@@ -118,7 +125,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "4";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "4";
             }
         }
 
@@ -132,7 +139,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "5";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "5";
             }
         }
 
@@ -146,7 +153,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "6";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "6";
             }
         }
 
@@ -160,7 +167,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "7";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "7";
             }
         }
 
@@ -174,7 +181,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "8";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "8";
             }
         }
 
@@ -188,7 +195,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "9";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "9";
             }
         }
 
@@ -202,7 +209,7 @@ namespace FCalculator
             else
             {
                 SecondNum += "0";
-                richTextBox1.Text = SecondNum;
+                richTextBox1.Text += "0";
             }
         }
 
