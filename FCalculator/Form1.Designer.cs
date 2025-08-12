@@ -158,6 +158,7 @@
             button10.TabIndex = 9;
             button10.Text = "%";
             button10.UseVisualStyleBackColor = true;
+
             // 
             // button12
             // 
@@ -175,7 +176,7 @@
             button13.Font = new Font("Segoe UI", 25F);
             button13.Location = new Point(325, 106);
             button13.Name = "button13";
-            button13.Size = new Size(80, 109);
+            button13.Size = new Size(80, 107);
             button13.TabIndex = 12;
             button13.Text = "/";
             button13.UseVisualStyleBackColor = true;
@@ -184,9 +185,9 @@
             // button14
             // 
             button14.Font = new Font("Segoe UI", 30F);
-            button14.Location = new Point(427, 104);
+            button14.Location = new Point(427, 106);
             button14.Name = "button14";
-            button14.Size = new Size(80, 109);
+            button14.Size = new Size(80, 107);
             button14.TabIndex = 13;
             button14.Text = "*";
             button14.UseVisualStyleBackColor = true;
@@ -195,9 +196,9 @@
             // button15
             // 
             button15.Font = new Font("Segoe UI", 25F);
-            button15.Location = new Point(427, 219);
+            button15.Location = new Point(427, 221);
             button15.Name = "button15";
-            button15.Size = new Size(80, 113);
+            button15.Size = new Size(80, 111);
             button15.TabIndex = 14;
             button15.Text = "+";
             button15.UseVisualStyleBackColor = true;
@@ -206,9 +207,9 @@
             // button16
             // 
             button16.Font = new Font("Segoe UI", 35F);
-            button16.Location = new Point(427, 350);
+            button16.Location = new Point(427, 338);
             button16.Name = "button16";
-            button16.Size = new Size(80, 117);
+            button16.Size = new Size(80, 129);
             button16.TabIndex = 15;
             button16.Text = "-";
             button16.UseVisualStyleBackColor = true;
@@ -223,6 +224,7 @@
             button17.TabIndex = 16;
             button17.Text = "СЕ";
             button17.UseVisualStyleBackColor = true;
+            button17.Click += button17_Click;
             // 
             // button18
             // 
@@ -255,6 +257,7 @@
             button11.TabIndex = 20;
             button11.Text = ",";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // richTextBox1
             // 

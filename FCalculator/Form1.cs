@@ -55,6 +55,7 @@ namespace FCalculator
                     Result = Convert.ToDouble(FirstNum) * Convert.ToDouble(SecondNum); break;
                 case '/':
                     Result = Convert.ToDouble(FirstNum) / Convert.ToDouble(SecondNum); break;
+
                 default:
                     break;
             }
@@ -205,12 +206,46 @@ namespace FCalculator
             }
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void button18_Click(object sender, EventArgs e)// ›ÚÓ —
         {
             richTextBox1.Text = "0";
             IsFirst = true;
             FirstNum = "";
             SecondNum = "";
         }
+
+        private void button11_Click(object sender, EventArgs e) // ›“Œ .
+        {
+            if (IsFirst)
+            {
+                FirstNum += ",";
+                richTextBox1.Text = FirstNum;
+            }
+            else
+            {
+                SecondNum += ",";
+                richTextBox1.Text = SecondNum;
+            }
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "0";
+            if (IsFirst)
+            {
+                if (FirstNum.Length == 0) return;
+                FirstNum = FirstNum.Substring(0, FirstNum.Length - 1);
+                richTextBox1.Text = FirstNum;
+
+            }
+            else
+            {
+                if (SecondNum.Length == 0) return;
+                SecondNum = SecondNum.Substring(0, SecondNum.Length - 1);
+                richTextBox1.Text = SecondNum;
+            }
+        }
+
+        
     }
 }
